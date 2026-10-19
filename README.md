@@ -1,6 +1,6 @@
 # Context Routing for AI Agents
 
-An open-source student project exploring how to give an agent a relevant lesson **only when a matching situation occurs**. The initial goal is a small, reproducible end-to-end system and an honest evaluation, not a production platform.
+An open-source, self-hostable student project inspired by Mirrors: inspect agent traces, turn recurring failures into reviewed lessons, preview where a lesson applies, route it at the relevant runtime step, and evaluate the outcome. The first release aims for a reproducible end-to-end system with a small local dashboard.
 
 ## The first demonstration
 
@@ -12,25 +12,27 @@ agent run -> trace events -> failure review -> approved lesson
 new agent step -> condition match ----------+-> inject lesson -> evaluate
 ```
 
-This is inspired by products such as [Mirrors](https://mirrors.dev/). The goal is a transparent, reusable implementation that students and other developers can inspect, extend, and benchmark.
+This is inspired by [Mirrors](https://mirrors.dev/). The goal is a transparent, reusable implementation that students and other developers can inspect, self-host, extend, and benchmark.
 
 ## Version 0 scope
 
 - One Python agent integration, with a small core interface that can support more adapters later.
 - Trace capture for task, tool call, tool result, and run outcome events.
-- Human review before a lesson becomes active.
+- Simple repeated-failure grouping and a candidate lesson, with human review before activation.
+- Historical preview of matching and unintended trace matches.
 - A rule-based router with a clear `match` / `no match` decision and recorded reason.
-- A simple local view or CLI for inspecting traces and lessons.
+- A simple local dashboard for inspecting traces, lessons, match previews, and outcomes.
 - A reproducible comparison of the baseline agent, an always-on lesson, and a routed lesson on held-out tasks.
 
-Automatic pattern discovery, multiple frameworks, dynamic tool-schema editing, and a hosted dashboard are later possibilities. They are outside version 0.
+Advanced pattern discovery, multiple framework adapters, dynamic tool-schema/result editing, and hosted deployment are later possibilities. They are outside version 0.
 
 ## Start here
 
 1. Read the [architecture and shared data contract](docs/architecture.md).
 2. Read the [evaluation plan](docs/evaluation.md).
-3. Pick an open [issue](../../issues), comment that you are taking it, and open a draft pull request early.
-4. Follow [CONTRIBUTING.md](CONTRIBUTING.md) for branches and reviews.
+3. Read the [kickoff plan and roles](docs/kickoff-plan.md), [research review](docs/literature-review.md), and [team polls](docs/team-polls.md). The lead can copy the [Arabic kickoff message](docs/team-message-ar.md).
+4. Pick an open [issue](../../issues), comment that you are taking it, and open a draft pull request early.
+5. Follow [CONTRIBUTING.md](CONTRIBUTING.md) for branches and reviews.
 
 The runnable example will be added as the first workstream lands. Until then, the repository is a coordination and design starting point.
 
