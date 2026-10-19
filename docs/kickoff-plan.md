@@ -1,6 +1,6 @@
 # Project kickoff: what we will build and how we will work
 
-This is the asynchronous working plan for a five-person university team. The original idea has already been shared with the team; this document turns it into small, reviewable deliverables. The technical starting point is the [Sentry paper](https://arxiv.org/abs/2610.02994), and the product reference is [Mirrors](https://mirrors.dev/). See the companion [literature review](literature-review.md) for details.
+This is the asynchronous working plan for a five-person university team. The idea was shared with the team on **11 September 2026**. The [Sentry paper](https://arxiv.org/abs/2610.02994) was published on **2 October 2026**, after that message; we use it now to inform implementation and evaluation, not as the source of the idea. [Mirrors](https://mirrors.dev/) is the product reference for the open-source workflow we want to build. See the companion [literature review](literature-review.md) for details.
 
 ## One-sentence outcome
 
